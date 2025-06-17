@@ -1,0 +1,24 @@
+name: Java CI with Maven
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: 21
+    - name: Build with Maven
+      run: ./mvnw
+             --batch-mode
+             --no-transfer-progress
+             --define org.slf4j.simpleLogger.showThreadName
+             --define org.slf4j.simpleLogger.showDateTime
+             --threads 1C
+             clean
+             install
