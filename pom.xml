@@ -7,6 +7,13 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>bnmn.api</module>
+        <module>bnmn.ears</module>
+        <module>bnmn.war</module>
+        <module>bnmn.ejbs</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
@@ -23,6 +30,41 @@
                 <version>${jakartaee-bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>pzrep.ejb-bean-name-module-name</groupId>
+                <artifactId>bnmn.api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>pzrep.ejb-bean-name-module-name</groupId>
+                <artifactId>bnmn.ejb-base</artifactId>
+                <version>${project.version}</version>
+                <type>ejb</type>
+            </dependency>
+            <dependency>
+                <groupId>pzrep.ejb-bean-name-module-name</groupId>
+                <artifactId>bnmn.ejb-file-name</artifactId>
+                <version>${project.version}</version>
+                <type>ejb</type>
+            </dependency>
+            <dependency>
+                <groupId>pzrep.ejb-bean-name-module-name</groupId>
+                <artifactId>bnmn.ejb-module-name</artifactId>
+                <version>${project.version}</version>
+                <type>ejb</type>
+            </dependency>
+            <dependency>
+                <groupId>pzrep.ejb-bean-name-module-name</groupId>
+                <artifactId>bnmn.ejb-lookup</artifactId>
+                <version>${project.version}</version>
+                <type>ejb</type>
+            </dependency>
+            <dependency>
+                <groupId>pzrep.ejb-bean-name-module-name</groupId>
+                <artifactId>bnmn.war</artifactId>
+                <version>${project.version}</version>
+                <type>war</type>
             </dependency>
         </dependencies>
     </dependencyManagement>

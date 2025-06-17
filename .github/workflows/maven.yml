@@ -22,3 +22,10 @@ jobs:
              --threads 1C
              clean
              install
+    - name: Upload EARs
+      uses: actions/upload-artifact@v4
+      with:
+        name: ejb-bean-name-module-name-ears
+        path: '**/target/**/*.ear'
+        retention-days: 7
+        if-no-files-found: error
