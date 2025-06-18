@@ -1,0 +1,370 @@
+Jun 18, 2025 6:33:05 PM jakarta.enterprise.launcher
+INFO: JVM invocation command line:
+/usr/lib/jvm/java-21-openjdk/bin/java
+-cp
+/tmp/glassfish7/glassfish/modules/glassfish.jar
+-DWALL_CLOCK_START=2025-06-18T16:33:04.864916837Z
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xmx512m
+--add-opens=java.base/java.io=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.base/sun.nio.fs=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED
+--add-opens=java.naming/javax.naming.spi=ALL-UNNAMED
+--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
+--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.vm.annotation=ALL-UNNAMED
+-javaagent:/tmp/glassfish7/glassfish/lib/monitor/flashlight-agent.jar
+-Djava.awt.headless=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djdk.xml.totalEntitySizeLimit=50000000
+-Djavax.xml.accessExternalSchema=all
+-Djava.security.policy=/tmp/glassfish7/glassfish/domains/domain1/config/server.policy
+-Djava.security.auth.login.config=/tmp/glassfish7/glassfish/domains/domain1/config/login.conf
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djavax.net.ssl.keyStore=/tmp/glassfish7/glassfish/domains/domain1/config/keystore.jks
+-Djavax.net.ssl.trustStore=/tmp/glassfish7/glassfish/domains/domain1/config/cacerts.jks
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dosgi.shell.telnet.port=6666
+-Dosgi.shell.telnet.maxconn=1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dgosh.args=--nointeractive
+-Dfelix.fileinstall.dir=/tmp/glassfish7/glassfish/modules/autostart/
+-Dfelix.fileinstall.poll=5000
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.bundles.new.start=true
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djdk.attach.allowAttachSelf=true
+-Dcom.sun.aas.instanceRoot=/tmp/glassfish7/glassfish/domains/domain1
+-Dcom.sun.aas.installRoot=/tmp/glassfish7/glassfish
+-Djava.library.path=/tmp/glassfish7/glassfish/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+com.sun.enterprise.glassfish.bootstrap.GlassFishMain
+-upgrade
+false
+-domaindir
+/tmp/glassfish7/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=false,,,start-domain,,,--verbose=true,,,--watchdog=false,,,--debug=false,,,--domaindir,,,/tmp/glassfish7/glassfish/domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+true
+-asadmin-classpath
+/tmp/glassfish7/glassfish/lib/client/appserver-cli.jar
+-debug
+false
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain
+Executing: /usr/lib/jvm/java-21-openjdk/bin/java -cp /tmp/glassfish7/glassfish/modules/glassfish.jar -DWALL_CLOCK_START=2025-06-18T16:33:04.864916837Z -XX:+UnlockDiagnosticVMOptions -XX:NewRatio=2 -Xmx512m --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED --add-opens=java.base/jdk.internal.vm.annotation=ALL-UNNAMED -javaagent:/tmp/glassfish7/glassfish/lib/monitor/flashlight-agent.jar -Djava.awt.headless=true -Djdk.corba.allowOutputStreamSubclass=true -Djdk.tls.rejectClientInitiatedRenegotiation=true -Djdk.xml.totalEntitySizeLimit=50000000 -Djavax.xml.accessExternalSchema=all -Djava.security.policy=/tmp/glassfish7/glassfish/domains/domain1/config/server.policy -Djava.security.auth.login.config=/tmp/glassfish7/glassfish/domains/domain1/config/login.conf -Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as -Djavax.net.ssl.keyStore=/tmp/glassfish7/glassfish/domains/domain1/config/keystore.jks -Djavax.net.ssl.trustStore=/tmp/glassfish7/glassfish/domains/domain1/config/cacerts.jks -Djdbc.drivers=org.apache.derby.jdbc.ClientDriver -DANTLR_USE_DIRECT_CLASS_LOADING=true -Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory -Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall -Dosgi.shell.telnet.port=6666 -Dosgi.shell.telnet.maxconn=1 -Dosgi.shell.telnet.ip=127.0.0.1 -Dgosh.args=--nointeractive -Dfelix.fileinstall.dir=/tmp/glassfish7/glassfish/modules/autostart/ -Dfelix.fileinstall.poll=5000 -Dfelix.fileinstall.log.level=2 -Dfelix.fileinstall.bundles.new.start=true -Dfelix.fileinstall.bundles.startTransient=true -Dfelix.fileinstall.disableConfigSave=false -Dorg.glassfish.gmbal.no.multipleUpperBoundsException=true -Dcom.ctc.wstx.returnNullForDefaultNamespace=true -Djdk.attach.allowAttachSelf=true -Dcom.sun.aas.instanceRoot=/tmp/glassfish7/glassfish/domains/domain1 -Dcom.sun.aas.installRoot=/tmp/glassfish7/glassfish -Djava.library.path=/tmp/glassfish7/glassfish/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib com.sun.enterprise.glassfish.bootstrap.GlassFishMain -upgrade false -domaindir /tmp/glassfish7/glassfish/domains/domain1 -read-stdin true -asadmin-args --host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--echo=false,,,--interactive=false,,,start-domain,,,--verbose=true,,,--watchdog=false,,,--debug=false,,,--domaindir,,,/tmp/glassfish7/glassfish/domains,,,domain1 -domainname domain1 -instancename server -type DAS -verbose true -asadmin-classpath /tmp/glassfish7/glassfish/lib/client/appserver-cli.jar -debug false -asadmin-classname com.sun.enterprise.admin.cli.AdminMain
+Please look at the server log for more details...
+Launching GlassFish on Felix platform
+OSGI framework packages:
+org.glassfish.main.jul;uses:="org.glassfish.main.jul.cfg,org.glassfish.main.jul.handler";version="7.0.25",org.glassfish.main.jul.cfg;version="7.0.25",org.glassfish.main.jul.env;version="7.0.25",org.glassfish.main.jul.formatter;uses:="org.glassfish.main.jul.cfg,org.glassfish.main.jul.record";version="7.0.25",org.glassfish.main.jul.handler;uses:="org.glassfish.main.jul.cfg,org.glassfish.main.jul.formatter,org.glassfish.main.jul.record";version="7.0.25",org.glassfish.main.jul.record;version="7.0.25",org.glassfish.main.jul.rotation;version="7.0.25",org.glassfish.main.jul.tracing;version="7.0.25", org.osgi.dto;version="1.1.1",org.osgi.framework;version="1.10",org.osgi.framework.connect;uses:="org.osgi.framework,org.osgi.framework.launch";version="1.0",org.osgi.framework.dto;uses:="org.osgi.dto";version="1.8",org.osgi.framework.hooks.bundle;uses:="org.osgi.framework";version="1.1",org.osgi.framework.hooks.resolver;uses:="org.osgi.framework.wiring";version="1.0",org.osgi.framework.hooks.service;uses:="org.osgi.framework";version="1.1",org.osgi.framework.hooks.weaving;uses:="org.osgi.framework.wiring";version="1.1",org.osgi.framework.launch;uses:="org.osgi.framework";version="1.2",org.osgi.framework.namespace;uses:="org.osgi.resource";version="1.2",org.osgi.framework.startlevel;uses:="org.osgi.framework";version="1.0",org.osgi.framework.startlevel.dto;uses:="org.osgi.dto";version="1.0",org.osgi.framework.wiring;uses:="org.osgi.framework,org.osgi.resource";version="1.2",org.osgi.framework.wiring.dto;uses:="org.osgi.dto,org.osgi.resource.dto";version="1.3",org.osgi.resource;version="1.0.1",org.osgi.resource.dto;uses:="org.osgi.dto";version="1.0.1",org.osgi.service.condition;version="1.0",org.osgi.service.packageadmin;uses:="org.osgi.framework";version="1.2.1",org.osgi.service.resolver;uses:="org.osgi.resource";version="1.1.1",org.osgi.service.startlevel;uses:="org.osgi.framework";version="1.1.1",org.osgi.service.url;version="1.0.1",org.osgi.util.tracker;uses:="org.osgi.framework";version="1.5.3", org.glassfish.embeddable;version="7.0.25",org.glassfish.embeddable.spi;uses:="org.glassfish.embeddable";version="7.0.25", org.glassfish.main.jul;uses:="org.glassfish.main.jul.cfg,org.glassfish.main.jul.handler";version="7.0.25",org.glassfish.main.jul.cfg;version="7.0.25",org.glassfish.main.jul.env;version="7.0.25",org.glassfish.main.jul.formatter;uses:="org.glassfish.main.jul.cfg,org.glassfish.main.jul.record";version="7.0.25",org.glassfish.main.jul.handler;uses:="org.glassfish.main.jul.cfg,org.glassfish.main.jul.formatter,org.glassfish.main.jul.record";version="7.0.25",org.glassfish.main.jul.record;version="7.0.25",org.glassfish.main.jul.rotation;version="7.0.25",org.glassfish.main.jul.tracing;version="7.0.25"
+JDK provided packages:
+com.sun.java.accessibility.util, com.sun.jdi, com.sun.jdi.connect, com.sun.jdi.connect.spi, com.sun.jdi.event, com.sun.jdi.request, com.sun.management, com.sun.net.httpserver, com.sun.net.httpserver.spi, com.sun.nio.file, com.sun.nio.sctp, com.sun.security.auth, com.sun.security.auth.callback, com.sun.security.auth.login, com.sun.security.auth.module, com.sun.security.jgss, com.sun.source.doctree, com.sun.source.tree, com.sun.source.util, com.sun.tools.attach, com.sun.tools.attach.spi, com.sun.tools.javac, com.sun.tools.jconsole, java.applet, java.awt, java.awt.color, java.awt.datatransfer, java.awt.desktop, java.awt.dnd, java.awt.event, java.awt.font, java.awt.geom, java.awt.im, java.awt.im.spi, java.awt.image, java.awt.image.renderable, java.awt.print, java.beans, java.beans.beancontext, java.io, java.lang, java.lang.annotation, java.lang.constant, java.lang.foreign, java.lang.instrument, java.lang.invoke, java.lang.management, java.lang.module, java.lang.ref, java.lang.reflect, java.lang.runtime, java.math, java.net, java.net.http, java.net.spi, java.nio, java.nio.channels, java.nio.channels.spi, java.nio.charset, java.nio.charset.spi, java.nio.file, java.nio.file.attribute, java.nio.file.spi, java.rmi, java.rmi.dgc, java.rmi.registry, java.rmi.server, java.security, java.security.cert, java.security.interfaces, java.security.spec, java.sql, java.text, java.text.spi, java.time, java.time.chrono, java.time.format, java.time.temporal, java.time.zone, java.util, java.util.concurrent, java.util.concurrent.atomic, java.util.concurrent.locks, java.util.function, java.util.jar, java.util.logging, java.util.prefs, java.util.random, java.util.regex, java.util.spi, java.util.stream, java.util.zip, javax.accessibility, javax.annotation.processing, javax.crypto, javax.crypto.interfaces, javax.crypto.spec, javax.imageio, javax.imageio.event, javax.imageio.metadata, javax.imageio.plugins.bmp, javax.imageio.plugins.jpeg, javax.imageio.plugins.tiff, javax.imageio.spi, javax.imageio.stream, javax.lang.model, javax.lang.model.element, javax.lang.model.type, javax.lang.model.util, javax.management, javax.management.loading, javax.management.modelmbean, javax.management.monitor, javax.management.openmbean, javax.management.relation, javax.management.remote, javax.management.remote.rmi, javax.management.timer, javax.naming, javax.naming.directory, javax.naming.event, javax.naming.ldap, javax.naming.ldap.spi, javax.naming.spi, javax.net, javax.net.ssl, javax.print, javax.print.attribute, javax.print.attribute.standard, javax.print.event, javax.rmi.ssl, javax.script, javax.security.auth, javax.security.auth.callback, javax.security.auth.kerberos, javax.security.auth.login, javax.security.auth.spi, javax.security.auth.x500, javax.security.cert, javax.security.sasl, javax.smartcardio, javax.sound.midi, javax.sound.midi.spi, javax.sound.sampled, javax.sound.sampled.spi, javax.sql, javax.sql.rowset, javax.sql.rowset.serial, javax.sql.rowset.spi, javax.swing, javax.swing.border, javax.swing.colorchooser, javax.swing.event, javax.swing.filechooser, javax.swing.plaf, javax.swing.plaf.basic, javax.swing.plaf.metal, javax.swing.plaf.multi, javax.swing.plaf.nimbus, javax.swing.plaf.synth, javax.swing.table, javax.swing.text, javax.swing.text.html, javax.swing.text.html.parser, javax.swing.text.rtf, javax.swing.tree, javax.swing.undo, javax.tools, javax.transaction.xa, javax.xml, javax.xml.catalog, javax.xml.crypto, javax.xml.crypto.dom, javax.xml.crypto.dsig, javax.xml.crypto.dsig.dom, javax.xml.crypto.dsig.keyinfo, javax.xml.crypto.dsig.spec, javax.xml.datatype, javax.xml.namespace, javax.xml.parsers, javax.xml.stream, javax.xml.stream.events, javax.xml.stream.util, javax.xml.transform, javax.xml.transform.dom, javax.xml.transform.sax, javax.xml.transform.stax, javax.xml.transform.stream, javax.xml.validation, javax.xml.xpath, jdk.dynalink, jdk.dynalink.beans, jdk.dynalink.linker, jdk.dynalink.linker.support, jdk.dynalink.support, jdk.javadoc.doclet, jdk.jfr, jdk.jfr.consumer, jdk.jshell, jdk.jshell.execution, jdk.jshell.spi, jdk.jshell.tool, jdk.management.jfr, jdk.net, jdk.nio, jdk.nio.mapmode, jdk.security.jarsigner, jdk.swing.interop, netscape.javascript, org.ietf.jgss, org.w3c.dom, org.w3c.dom.bootstrap, org.w3c.dom.css, org.w3c.dom.events, org.w3c.dom.html, org.w3c.dom.ls, org.w3c.dom.ranges, org.w3c.dom.stylesheets, org.w3c.dom.traversal, org.w3c.dom.views, org.w3c.dom.xpath, org.xml.sax, org.xml.sax.ext, org.xml.sax.helpers, sun.misc, sun.reflect
+[#|2025-06-18T18:33:10.374211+02:00|INFO|GF 7.0.25|com.sun.enterprise.server.logging.LogManagerService|_ThreadID=35;_ThreadName=RunLevelControllerThread-1750264390257;_LevelValue=800;|
+  Using property file: /tmp/glassfish7/glassfish/domains/domain1/config/logging.properties|#]
+
+[#|2025-06-18T18:33:10.441241+02:00|INFO|GF 7.0.25|com.sun.enterprise.server.logging.LogManagerService|_ThreadID=35;_ThreadName=RunLevelControllerThread-1750264390257;_LevelValue=800;_MessageID=NCLS-LOGGING-00009;|
+  Running GlassFish Version: Eclipse GlassFish 7.0.25 (commit: 17c9f164606e47efbc58907a97ad351a7f54089e)|#]
+
+[#|2025-06-18T18:33:10.861103+02:00|INFO|GF 7.0.25|org.glassfish.ha.store.spi.BackingStoreFactoryRegistry|_ThreadID=35;_ThreadName=RunLevelControllerThread-1750264390257;_LevelValue=800;|
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry|#]
+
+[#|2025-06-18T18:33:10.982137+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.core.security|_ThreadID=42;_ThreadName=RunLevelControllerThread-1750264390672;_LevelValue=800;_MessageID=NCLS-SECURITY-01115;|
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.|#]
+
+[#|2025-06-18T18:33:10.992826+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.core.security|_ThreadID=42;_ThreadName=RunLevelControllerThread-1750264390672;_LevelValue=800;_MessageID=NCLS-SECURITY-01115;|
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.|#]
+
+[#|2025-06-18T18:33:11.016604+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.core.security|_ThreadID=42;_ThreadName=RunLevelControllerThread-1750264390672;_LevelValue=800;_MessageID=NCLS-SECURITY-01115;|
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.|#]
+
+[#|2025-06-18T18:33:11.264095+02:00|INFO|GF 7.0.25|jakarta.enterprise.security.services|_ThreadID=42;_ThreadName=RunLevelControllerThread-1750264390672;_LevelValue=800;_MessageID=SEC-SVCS-00100;|
+  Authorization Service has successfully initialized.|#]
+
+[#|2025-06-18T18:33:11.381693+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=37;_ThreadName=RunLevelControllerThread-1750264390268;_LevelValue=800;_MessageID=NCLS-CORE-00087;|
+  Grizzly Framework 4.0.2 started in: 72 ms - bound to [/0.0.0.0:8080]|#]
+
+[#|2025-06-18T18:33:11.426873+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=37;_ThreadName=RunLevelControllerThread-1750264390268;_LevelValue=800;_MessageID=NCLS-CORE-00087;|
+  Grizzly Framework 4.0.2 started in: 3 ms - bound to [/0.0.0.0:8181]|#]
+
+[#|2025-06-18T18:33:11.447240+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=37;_ThreadName=RunLevelControllerThread-1750264390268;_LevelValue=800;_MessageID=NCLS-CORE-00087;|
+  Grizzly Framework 4.0.2 started in: 2 ms - bound to [/0.0.0.0:4848]|#]
+
+[#|2025-06-18T18:33:11.511896+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=36;_ThreadName=RunLevelControllerThread-1750264390267;_LevelValue=800;_MessageID=NCLS-CORE-00087;|
+  Grizzly Framework 4.0.2 started in: 3 ms - bound to [/0.0.0.0:3700]|#]
+
+[#|2025-06-18T18:33:11.824268+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=1;_ThreadName=main;_LevelValue=800;_MessageID=NCLS-CORE-00017;|
+  Eclipse GlassFish 7.0.25 (commit: 17c9f164606e47efbc58907a97ad351a7f54089e) startup time: Felix (4,239 ms), startup services (1,585 ms), total (5,824 ms)|#]
+
+[#|2025-06-18T18:33:11.831959+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=1;_ThreadName=main;_LevelValue=800;_MessageID=NCLS-CORE-00018;|
+  Total startup time including CLI: 6,966 ms|#]
+
+[#|2025-06-18T18:33:12.422059+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.jmx|_ThreadID=79;_ThreadName=Thread-14;_LevelValue=800;_MessageID=NCLS-JMX-00005;|
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://xxx.yyy.zz:8686/jndi/rmi://xxx.yyy.zz:8686/jmxrmi|#]
+
+[#|2025-06-18T18:33:12.523108+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=36;_ThreadName=RunLevelControllerThread-1750264390267;_LevelValue=800;_MessageID=NCLS-CORE-00087;|
+  Grizzly Framework 4.0.2 started in: 2 ms - bound to [/0.0.0.0:7676]|#]
+
+[#|2025-06-18T18:33:40.057656+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.tools.deployment.autodeploy|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=800;_MessageID=NCLS-DEPLOYMENT-02027;|
+  Selecting file /tmp/glassfish7/glassfish/domains/domain1/autodeploy/bnmn.module-name-ear-1.0-SNAPSHOT.ear for autodeployment|#]
+
+[#|2025-06-18T18:33:42.457646+02:00|WARNING|GF 7.0.25|jakarta.enterprise.system.tools.deployment.dol|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=900;|
+  Unresolved <ejb-link>: Base/Ant|#]
+
+[#|2025-06-18T18:33:42.523413+02:00|SEVERE|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=1000;|
+  Exception while deploying the app [bnmn.module-name-ear-1.0-SNAPSHOT]|#]
+
+[#|2025-06-18T18:33:42.524129+02:00|SEVERE|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=1000;_MessageID=NCLS-CORE-00026;|
+  Exception during lifecycle processing
+org.glassfish.deployment.common.DeploymentException: JNDI lookup failed for the resource: Name: java:comp/env/pzrep.ejblinksyntax.ebn.Choco/creature, Lookup: #pzrep.ejblinksyntax.api.Creature, Type: Session
+	at com.sun.enterprise.deployment.util.ResourceValidator.validateJNDIRefs(ResourceValidator.java:886)
+	at com.sun.enterprise.deployment.util.ResourceValidator.validateResources(ResourceValidator.java:748)
+	at com.sun.enterprise.deployment.util.ResourceValidator.event(ResourceValidator.java:173)
+	at org.glassfish.kernel.event.EventsImpl$Listener.event(EventsImpl.java:140)
+	at org.glassfish.kernel.event.EventsImpl.send(EventsImpl.java:102)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:455)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:256)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:474)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:570)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:566)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:453)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:565)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:596)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:588)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:453)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:587)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1480)
+	at com.sun.enterprise.v3.admin.CommandRunnerExecutionContext.execute(CommandRunnerExecutionContext.java:251)
+	at org.glassfish.deployment.autodeploy.AutoOperation.run(AutoOperation.java:140)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.deploy(AutoDeployer.java:569)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.deployAll(AutoDeployer.java:456)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.run(AutoDeployer.java:384)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.run(AutoDeployer.java:375)
+	at org.glassfish.deployment.autodeploy.AutoDeployService$1.run(AutoDeployService.java:208)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+Caused by: javax.naming.NamingException: Lookup failed for #pzrep.ejblinksyntax.api.Creature in SerialContext[myEnv={java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl, java.naming.factory.url.pkgs=com.sun.enterprise.naming}] [Root exception is javax.naming.NameNotFoundException: #pzrep.ejblinksyntax.api.Creature not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:836)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:257)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.doLookup(InitialContext.java:282)
+	at com.sun.enterprise.deployment.util.ResourceValidator.validateJNDIRefs(ResourceValidator.java:882)
+	... 27 more
+Caused by: javax.naming.NameNotFoundException: #pzrep.ejblinksyntax.api.Creature not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:235)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:203)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:38)
+	at com.sun.enterprise.naming.impl.LocalSerialContextProviderImpl.lookup(LocalSerialContextProviderImpl.java:92)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:825)
+	... 32 more
+|#]
+
+[#|2025-06-18T18:33:42.529101+02:00|INFO|GF 7.0.25|org.glassfish.web.loader.WebappClassLoader|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=800;|
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@4e9d8ede[name=pzrep.ejb-bean-name-module-name-bnmn_war], urls=[
+file:/tmp/glassfish7/glassfish/domains/domain1/applications/bnmn.module-name-ear-1.0-SNAPSHOT/pzrep.ejb-bean-name-module-name-bnmn_war/WEB-INF/classes/
+file:/tmp/glassfish7/glassfish/domains/domain1/generated/ejb/bnmn.module-name-ear-1.0-SNAPSHOT/pzrep.ejb-bean-name-module-name-bnmn_war/
+][delegate=true, context=pzrep.ejb-bean-name-module-name-bnmn_war, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=0, pathTimestamps.size=0, resourceEntryCache.size=0]|#]
+
+[#|2025-06-18T18:33:42.582831+02:00|INFO|GF 7.0.25|org.glassfish.web.loader.WebappClassLoader|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=800;|
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@ddba0[name=pzrep.ejb-bean-name-module-name-bnmn_war], urls=[
+file:/tmp/glassfish7/glassfish/domains/domain1/applications/bnmn.module-name-ear-1.0-SNAPSHOT/pzrep.ejb-bean-name-module-name-bnmn_war/WEB-INF/classes/
+file:/tmp/glassfish7/glassfish/domains/domain1/generated/ejb/bnmn.module-name-ear-1.0-SNAPSHOT/pzrep.ejb-bean-name-module-name-bnmn_war/
+][delegate=true, context=pzrep.ejb-bean-name-module-name-bnmn_war, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=0, pathTimestamps.size=0, resourceEntryCache.size=0]|#]
+
+[#|2025-06-18T18:33:42.595024+02:00|SEVERE|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=1000;|
+  Exception while deploying the app [bnmn.module-name-ear-1.0-SNAPSHOT] : JNDI lookup failed for the resource: Name: java:comp/env/pzrep.ejblinksyntax.ebn.Choco/creature, Lookup: #pzrep.ejblinksyntax.api.Creature, Type: Session
+javax.naming.NamingException: Lookup failed for #pzrep.ejblinksyntax.api.Creature in SerialContext[myEnv={java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl, java.naming.factory.url.pkgs=com.sun.enterprise.naming}] [Root exception is javax.naming.NameNotFoundException: #pzrep.ejblinksyntax.api.Creature not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:836)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:257)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.doLookup(InitialContext.java:282)
+	at com.sun.enterprise.deployment.util.ResourceValidator.validateJNDIRefs(ResourceValidator.java:882)
+	at com.sun.enterprise.deployment.util.ResourceValidator.validateResources(ResourceValidator.java:748)
+	at com.sun.enterprise.deployment.util.ResourceValidator.event(ResourceValidator.java:173)
+	at org.glassfish.kernel.event.EventsImpl$Listener.event(EventsImpl.java:140)
+	at org.glassfish.kernel.event.EventsImpl.send(EventsImpl.java:102)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:455)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:256)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:474)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:570)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:566)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:453)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:565)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:596)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:588)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:453)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:587)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1480)
+	at com.sun.enterprise.v3.admin.CommandRunnerExecutionContext.execute(CommandRunnerExecutionContext.java:251)
+	at org.glassfish.deployment.autodeploy.AutoOperation.run(AutoOperation.java:140)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.deploy(AutoDeployer.java:569)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.deployAll(AutoDeployer.java:456)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.run(AutoDeployer.java:384)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.run(AutoDeployer.java:375)
+	at org.glassfish.deployment.autodeploy.AutoDeployService$1.run(AutoDeployService.java:208)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+Caused by: javax.naming.NameNotFoundException: #pzrep.ejblinksyntax.api.Creature not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:235)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:203)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:38)
+	at com.sun.enterprise.naming.impl.LocalSerialContextProviderImpl.lookup(LocalSerialContextProviderImpl.java:92)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:825)
+	... 32 more
+|#]
+
+[#|2025-06-18T18:33:42.607746+02:00|WARNING|GF 7.0.25|jakarta.enterprise.system.tools.deployment.autodeploy|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=900;_MessageID=NCLS-DEPLOYMENT-02036;|
+  Error occurred during deployment: Exception while deploying the app [bnmn.module-name-ear-1.0-SNAPSHOT] : JNDI lookup failed for the resource: Name: java:comp/env/pzrep.ejblinksyntax.ebn.Choco/creature, Lookup: #pzrep.ejblinksyntax.api.Creature, Type: Session. Please see server.log for more details.|#]
+
+[#|2025-06-18T18:33:42.610460+02:00|WARNING|GF 7.0.25|jakarta.enterprise.system.tools.deployment.autodeploy|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=900;_MessageID=NCLS-DEPLOYMENT-02036;|
+  [AutoDeploy] Autodeploy failed : /tmp/glassfish7/glassfish/domains/domain1/autodeploy/bnmn.module-name-ear-1.0-SNAPSHOT.ear.|#]
+
+[#|2025-06-18T18:33:42.611599+02:00|INFO|GF 7.0.25|jakarta.enterprise.system.tools.deployment.autodeploy|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=800;_MessageID=NCLS-DEPLOYMENT-02027;|
+  Selecting file /tmp/glassfish7/glassfish/domains/domain1/autodeploy/bnmn.module-name-ear-1.0-SNAPSHOT.ear for autodeployment|#]
+
+[#|2025-06-18T18:33:43.473772+02:00|WARNING|GF 7.0.25|jakarta.enterprise.system.tools.deployment.dol|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=900;|
+  Unresolved <ejb-link>: Base/Ant|#]
+
+[#|2025-06-18T18:33:43.500435+02:00|SEVERE|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=1000;|
+  Exception while deploying the app [bnmn.module-name-ear-1.0-SNAPSHOT]|#]
+
+[#|2025-06-18T18:33:43.501197+02:00|SEVERE|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=1000;_MessageID=NCLS-CORE-00026;|
+  Exception during lifecycle processing
+org.glassfish.deployment.common.DeploymentException: JNDI lookup failed for the resource: Name: java:comp/env/pzrep.ejblinksyntax.ebn.Choco/creature, Lookup: #pzrep.ejblinksyntax.api.Creature, Type: Session
+	at com.sun.enterprise.deployment.util.ResourceValidator.validateJNDIRefs(ResourceValidator.java:886)
+	at com.sun.enterprise.deployment.util.ResourceValidator.validateResources(ResourceValidator.java:748)
+	at com.sun.enterprise.deployment.util.ResourceValidator.event(ResourceValidator.java:173)
+	at org.glassfish.kernel.event.EventsImpl$Listener.event(EventsImpl.java:140)
+	at org.glassfish.kernel.event.EventsImpl.send(EventsImpl.java:102)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:455)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:256)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:474)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:570)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:566)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:453)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:565)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:596)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:588)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:453)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:587)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1480)
+	at com.sun.enterprise.v3.admin.CommandRunnerExecutionContext.execute(CommandRunnerExecutionContext.java:251)
+	at org.glassfish.deployment.autodeploy.AutoOperation.run(AutoOperation.java:140)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.deploy(AutoDeployer.java:569)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.deployAll(AutoDeployer.java:456)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.run(AutoDeployer.java:384)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.run(AutoDeployer.java:375)
+	at org.glassfish.deployment.autodeploy.AutoDeployService$1.run(AutoDeployService.java:208)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+Caused by: javax.naming.NamingException: Lookup failed for #pzrep.ejblinksyntax.api.Creature in SerialContext[myEnv={java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl, java.naming.factory.url.pkgs=com.sun.enterprise.naming}] [Root exception is javax.naming.NameNotFoundException: #pzrep.ejblinksyntax.api.Creature not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:836)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:257)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.doLookup(InitialContext.java:282)
+	at com.sun.enterprise.deployment.util.ResourceValidator.validateJNDIRefs(ResourceValidator.java:882)
+	... 27 more
+Caused by: javax.naming.NameNotFoundException: #pzrep.ejblinksyntax.api.Creature not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:235)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:203)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:38)
+	at com.sun.enterprise.naming.impl.LocalSerialContextProviderImpl.lookup(LocalSerialContextProviderImpl.java:92)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:825)
+	... 32 more
+|#]
+
+[#|2025-06-18T18:33:43.502519+02:00|INFO|GF 7.0.25|org.glassfish.web.loader.WebappClassLoader|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=800;|
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@64fb1ec7[name=pzrep.ejb-bean-name-module-name-bnmn_war], urls=[
+file:/tmp/glassfish7/glassfish/domains/domain1/applications/bnmn.module-name-ear-1.0-SNAPSHOT/pzrep.ejb-bean-name-module-name-bnmn_war/WEB-INF/classes/
+file:/tmp/glassfish7/glassfish/domains/domain1/generated/ejb/bnmn.module-name-ear-1.0-SNAPSHOT/pzrep.ejb-bean-name-module-name-bnmn_war/
+][delegate=true, context=pzrep.ejb-bean-name-module-name-bnmn_war, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=0, pathTimestamps.size=0, resourceEntryCache.size=0]|#]
+
+[#|2025-06-18T18:33:43.506471+02:00|INFO|GF 7.0.25|org.glassfish.web.loader.WebappClassLoader|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=800;|
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@79691480[name=pzrep.ejb-bean-name-module-name-bnmn_war], urls=[
+file:/tmp/glassfish7/glassfish/domains/domain1/applications/bnmn.module-name-ear-1.0-SNAPSHOT/pzrep.ejb-bean-name-module-name-bnmn_war/WEB-INF/classes/
+file:/tmp/glassfish7/glassfish/domains/domain1/generated/ejb/bnmn.module-name-ear-1.0-SNAPSHOT/pzrep.ejb-bean-name-module-name-bnmn_war/
+][delegate=true, context=pzrep.ejb-bean-name-module-name-bnmn_war, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=0, pathTimestamps.size=0, resourceEntryCache.size=0]|#]
+
+[#|2025-06-18T18:33:43.513255+02:00|SEVERE|GF 7.0.25|jakarta.enterprise.system.core|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=1000;|
+  Exception while deploying the app [bnmn.module-name-ear-1.0-SNAPSHOT] : JNDI lookup failed for the resource: Name: java:comp/env/pzrep.ejblinksyntax.ebn.Choco/creature, Lookup: #pzrep.ejblinksyntax.api.Creature, Type: Session
+javax.naming.NamingException: Lookup failed for #pzrep.ejblinksyntax.api.Creature in SerialContext[myEnv={java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl, java.naming.factory.url.pkgs=com.sun.enterprise.naming}] [Root exception is javax.naming.NameNotFoundException: #pzrep.ejblinksyntax.api.Creature not found]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:836)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:257)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.doLookup(InitialContext.java:282)
+	at com.sun.enterprise.deployment.util.ResourceValidator.validateJNDIRefs(ResourceValidator.java:882)
+	at com.sun.enterprise.deployment.util.ResourceValidator.validateResources(ResourceValidator.java:748)
+	at com.sun.enterprise.deployment.util.ResourceValidator.event(ResourceValidator.java:173)
+	at org.glassfish.kernel.event.EventsImpl$Listener.event(EventsImpl.java:140)
+	at org.glassfish.kernel.event.EventsImpl.send(EventsImpl.java:102)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:455)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:256)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:474)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:570)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:566)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:453)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:565)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:596)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:588)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:453)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:587)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1480)
+	at com.sun.enterprise.v3.admin.CommandRunnerExecutionContext.execute(CommandRunnerExecutionContext.java:251)
+	at org.glassfish.deployment.autodeploy.AutoOperation.run(AutoOperation.java:140)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.deploy(AutoDeployer.java:569)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.deployAll(AutoDeployer.java:456)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.run(AutoDeployer.java:384)
+	at org.glassfish.deployment.autodeploy.AutoDeployer.run(AutoDeployer.java:375)
+	at org.glassfish.deployment.autodeploy.AutoDeployService$1.run(AutoDeployService.java:208)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+Caused by: javax.naming.NameNotFoundException: #pzrep.ejblinksyntax.api.Creature not found
+	at com.sun.enterprise.naming.impl.TransientContext.doLookup(TransientContext.java:235)
+	at com.sun.enterprise.naming.impl.TransientContext.lookup(TransientContext.java:203)
+	at com.sun.enterprise.naming.impl.SerialContextProviderImpl.lookup(SerialContextProviderImpl.java:38)
+	at com.sun.enterprise.naming.impl.LocalSerialContextProviderImpl.lookup(LocalSerialContextProviderImpl.java:92)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:825)
+	... 32 more
+|#]
+
+[#|2025-06-18T18:33:43.517948+02:00|WARNING|GF 7.0.25|jakarta.enterprise.system.tools.deployment.autodeploy|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=900;_MessageID=NCLS-DEPLOYMENT-02036;|
+  Error occurred during deployment: Exception while deploying the app [bnmn.module-name-ear-1.0-SNAPSHOT] : JNDI lookup failed for the resource: Name: java:comp/env/pzrep.ejblinksyntax.ebn.Choco/creature, Lookup: #pzrep.ejblinksyntax.api.Creature, Type: Session. Please see server.log for more details.|#]
+
+[#|2025-06-18T18:33:43.518500+02:00|WARNING|GF 7.0.25|jakarta.enterprise.system.tools.deployment.autodeploy|_ThreadID=77;_ThreadName=AutoDeployer;_LevelValue=900;_MessageID=NCLS-DEPLOYMENT-02036;|
+  [AutoDeploy] Autodeploy failed : /tmp/glassfish7/glassfish/domains/domain1/autodeploy/bnmn.module-name-ear-1.0-SNAPSHOT.ear.|#]
+
